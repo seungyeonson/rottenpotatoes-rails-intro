@@ -2219,3 +2219,269 @@ Processing by MoviesController#index as HTML
   [1m[36mMovie Load (0.2ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('G', 'PG')  ORDER BY title[0m
   Rendered movies/index.html.haml within layouts/application (2.5ms)
 Completed 200 OK in 13ms (Views: 10.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 168.131.155.66 at 2019-05-30 07:49:50 +0000
+Cannot render console from 168.131.155.66! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by MoviesController#index as HTML
+  [1m[35mMovie Load (0.1ms)[0m  SELECT "movies"."rating" FROM "movies"  ORDER BY "movies"."rating" ASC
+  [1m[36mMovie Load (0.2ms)[0m  [1mSELECT "movies".* FROM "movies"[0m
+  Rendered movies/index.html.haml within layouts/application (16.3ms)
+Completed 200 OK in 229ms (Views: 212.9ms | ActiveRecord: 0.6ms)
+  [1m[36m (5.5ms)[0m  [1mCREATE TABLE "movies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "rating" varchar, "description" text, "release_date" datetime, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (4.2ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (4.0ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36m (0.1ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (4.2ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20150809022253')
+
+
+Started GET "/" for 168.131.155.66 at 2019-05-30 08:25:46 +0000
+Cannot render console from 168.131.155.66! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by MoviesController#index as HTML
+  [1m[35mMovie Load (0.1ms)[0m  SELECT "movies"."rating" FROM "movies"  ORDER BY "movies"."rating" ASC
+  [1m[36mMovie Load (0.2ms)[0m  [1mSELECT "movies".* FROM "movies"[0m
+  Rendered movies/index.html.haml within layouts/application (11.4ms)
+Completed 200 OK in 219ms (Views: 202.5ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/movies/search_tmdb" for 168.131.155.66 at 2019-05-30 08:25:54 +0000
+Cannot render console from 168.131.155.66! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#search_tmdb as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"5kikqSdseG4C3AQwl6axrAc5YU1/0f5Vrv0BGU6lgDzYs8q2xaU9A51RAy9m7zJJTwGxHtA2VbTiV+/80WPKew==", "search_terms"=>"amelie", "commit"=>"Search TMDb"}
+Redirected to https://f28d484b483f468d8f35563f1f3aa5a6.vfs.cloud9.us-east-1.amazonaws.com/movies
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/movies" for 168.131.155.66 at 2019-05-30 08:25:54 +0000
+Cannot render console from 168.131.155.66! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#index as HTML
+  [1m[35mMovie Load (0.2ms)[0m  SELECT "movies"."rating" FROM "movies"  ORDER BY "movies"."rating" ASC
+  [1m[36mMovie Load (0.2ms)[0m  [1mSELECT "movies".* FROM "movies"[0m
+  Rendered movies/index.html.haml within layouts/application (3.1ms)
+Completed 200 OK in 13ms (Views: 11.5ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/movies/search_tmdb" for 168.131.155.66 at 2019-05-30 08:25:59 +0000
+Cannot render console from 168.131.155.66! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#search_tmdb as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Sx4kot9ej2yCvuyyGViPTYIfKSGpvuqIE7b9P1CXYZl15Uq9PZfKAR0z663oEQyoyif5cgZZQWlfHBPaz1Er3g==", "search_terms"=>"amelie", "commit"=>"Search TMDb"}
+Redirected to https://f28d484b483f468d8f35563f1f3aa5a6.vfs.cloud9.us-east-1.amazonaws.com/movies
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/movies" for 168.131.155.66 at 2019-05-30 08:25:59 +0000
+Cannot render console from 168.131.155.66! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#index as HTML
+  [1m[35mMovie Load (0.2ms)[0m  SELECT "movies"."rating" FROM "movies"  ORDER BY "movies"."rating" ASC
+  [1m[36mMovie Load (0.1ms)[0m  [1mSELECT "movies".* FROM "movies"[0m
+  Rendered movies/index.html.haml within layouts/application (3.4ms)
+Completed 200 OK in 13ms (Views: 11.6ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/movies/search_tmdb" for 168.131.155.66 at 2019-05-30 08:26:05 +0000
+Cannot render console from 168.131.155.66! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#search_tmdb as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"VhcOOlA5q4RNXsIpXiDO5qdMMkM4+LttUH23BnskG9ho7GAlsvDu6dLTxTavaU0D73TiEJcfEIwc11nj5OJRnw==", "search_terms"=>"Amelie", "commit"=>"Search TMDb"}
+Redirected to https://f28d484b483f468d8f35563f1f3aa5a6.vfs.cloud9.us-east-1.amazonaws.com/movies
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/movies" for 168.131.155.66 at 2019-05-30 08:26:05 +0000
+Cannot render console from 168.131.155.66! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#index as HTML
+  [1m[35mMovie Load (0.2ms)[0m  SELECT "movies"."rating" FROM "movies"  ORDER BY "movies"."rating" ASC
+  [1m[36mMovie Load (0.1ms)[0m  [1mSELECT "movies".* FROM "movies"[0m
+  Rendered movies/index.html.haml within layouts/application (3.2ms)
+Completed 200 OK in 13ms (Views: 11.4ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/movies/search_tmdb" for 168.131.155.66 at 2019-05-30 08:26:06 +0000
+Cannot render console from 168.131.155.66! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#search_tmdb as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"VhcOOlA5q4RNXsIpXiDO5qdMMkM4+LttUH23BnskG9ho7GAlsvDu6dLTxTavaU0D73TiEJcfEIwc11nj5OJRnw==", "search_terms"=>"Amelie", "commit"=>"Search TMDb"}
+Redirected to https://f28d484b483f468d8f35563f1f3aa5a6.vfs.cloud9.us-east-1.amazonaws.com/movies
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/movies" for 168.131.155.66 at 2019-05-30 08:26:06 +0000
+Cannot render console from 168.131.155.66! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#index as HTML
+  [1m[35mMovie Load (0.2ms)[0m  SELECT "movies"."rating" FROM "movies"  ORDER BY "movies"."rating" ASC
+  [1m[36mMovie Load (0.1ms)[0m  [1mSELECT "movies".* FROM "movies"[0m
+  Rendered movies/index.html.haml within layouts/application (3.1ms)
+Completed 200 OK in 13ms (Views: 11.4ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/movies/search_tmdb" for 168.131.155.66 at 2019-05-30 08:26:14 +0000
+Cannot render console from 168.131.155.66! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#search_tmdb as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"wfn9o+jymBUmqEgVb3dRJRpWzDBiQfJ904G9YNlyPoj/ApO8CjvdeLklTwqePtLAUm4cY82mWZyfK1OFRrR0zw==", "search_terms"=>"Aladdin", "commit"=>"Search TMDb"}
+Redirected to https://f28d484b483f468d8f35563f1f3aa5a6.vfs.cloud9.us-east-1.amazonaws.com/movies
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/movies" for 168.131.155.66 at 2019-05-30 08:26:14 +0000
+Cannot render console from 168.131.155.66! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#index as HTML
+  [1m[35mMovie Load (0.2ms)[0m  SELECT "movies"."rating" FROM "movies"  ORDER BY "movies"."rating" ASC
+  [1m[36mMovie Load (0.1ms)[0m  [1mSELECT "movies".* FROM "movies"[0m
+  Rendered movies/index.html.haml within layouts/application (3.5ms)
+Completed 200 OK in 14ms (Views: 12.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/movies?utf8=%E2%9C%93&ratings%5BG%5D=1&ratings%5BPG%5D=1&ratings%5BPG-13%5D=1&ratings%5BR%5D=1&commit=Refresh" for 168.131.155.66 at 2019-05-30 08:26:43 +0000
+Cannot render console from 168.131.155.66! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#index as HTML
+  Parameters: {"utf8"=>"✓", "ratings"=>{"G"=>"1", "PG"=>"1", "PG-13"=>"1", "R"=>"1"}, "commit"=>"Refresh"}
+  [1m[35mMovie Load (0.2ms)[0m  SELECT "movies"."rating" FROM "movies"  ORDER BY "movies"."rating" ASC
+  [1m[36mMovie Load (0.2ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('G', 'PG', 'PG-13', 'R')[0m
+  Rendered movies/index.html.haml within layouts/application (4.3ms)
+Completed 200 OK in 21ms (Views: 12.9ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/movies/search_tmdb" for 168.131.155.66 at 2019-05-30 08:26:50 +0000
+Cannot render console from 168.131.155.66! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#search_tmdb as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Wq16IYr6824ARj2jYBBnbH+oduUziEqFZB9+7j0shLNkVhQ+aDO2A5/LOryRWeSJN5Cmtpxv4WQotZALourO9A==", "search_terms"=>"Aladdin", "commit"=>"Search TMDb"}
+Redirected to https://f28d484b483f468d8f35563f1f3aa5a6.vfs.cloud9.us-east-1.amazonaws.com/movies
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/movies" for 168.131.155.66 at 2019-05-30 08:26:51 +0000
+Cannot render console from 168.131.155.66! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#index as HTML
+  [1m[35mMovie Load (0.2ms)[0m  SELECT "movies"."rating" FROM "movies"  ORDER BY "movies"."rating" ASC
+  [1m[36mMovie Load (0.2ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('G', 'PG', 'PG-13', 'R')[0m
+  Rendered movies/index.html.haml within layouts/application (3.5ms)
+Completed 200 OK in 14ms (Views: 11.8ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/movies/search_tmdb" for 168.131.155.66 at 2019-05-30 08:26:53 +0000
+Cannot render console from 168.131.155.66! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#search_tmdb as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"+uL/lVwpaOFrXHBor/nRXHS73zDF78a0RmozaO3KUT7EGZGKvuAtjPTRd3desFK5PIMPY2oIbVUKwN2NcgwbeQ==", "search_terms"=>"Aladdin", "commit"=>"Search TMDb"}
+Redirected to https://f28d484b483f468d8f35563f1f3aa5a6.vfs.cloud9.us-east-1.amazonaws.com/movies
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/movies" for 168.131.155.66 at 2019-05-30 08:26:53 +0000
+Cannot render console from 168.131.155.66! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#index as HTML
+  [1m[35mMovie Load (0.2ms)[0m  SELECT "movies"."rating" FROM "movies"  ORDER BY "movies"."rating" ASC
+  [1m[36mMovie Load (0.2ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('G', 'PG', 'PG-13', 'R')[0m
+  Rendered movies/index.html.haml within layouts/application (3.4ms)
+Completed 200 OK in 14ms (Views: 11.6ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/movies/search_tmdb" for 168.131.155.66 at 2019-05-30 08:27:15 +0000
+Cannot render console from 168.131.155.66! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#search_tmdb as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ADSCkITwCHv4TAoM6B9Q7Tuyh/rQY0rWuUyPSUKRzws+z+yPZjlNFmfBDRMZVtMIc4pXqX+E4Tf15mGs3VeFTA==", "search_terms"=>"", "commit"=>"Search TMDb"}
+Redirected to https://f28d484b483f468d8f35563f1f3aa5a6.vfs.cloud9.us-east-1.amazonaws.com/movies
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/movies" for 168.131.155.66 at 2019-05-30 08:27:16 +0000
+Cannot render console from 168.131.155.66! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#index as HTML
+  [1m[35mMovie Load (0.2ms)[0m  SELECT "movies"."rating" FROM "movies"  ORDER BY "movies"."rating" ASC
+  [1m[36mMovie Load (0.2ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('G', 'PG', 'PG-13', 'R')[0m
+  Rendered movies/index.html.haml within layouts/application (3.6ms)
+Completed 200 OK in 15ms (Views: 13.3ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/movies/search_tmdb" for 168.131.155.66 at 2019-05-30 08:27:17 +0000
+Cannot render console from 168.131.155.66! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#search_tmdb as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"JxOpDT1EUvIZf85qHSOFDtB3dvtJVfuUQhv28Vc++QEZ6McS340Xn4byyXXsagbrmE+mqOayUHUOsRgUyPizRg==", "search_terms"=>"s", "commit"=>"Search TMDb"}
+Redirected to https://f28d484b483f468d8f35563f1f3aa5a6.vfs.cloud9.us-east-1.amazonaws.com/movies
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/movies" for 168.131.155.66 at 2019-05-30 08:27:18 +0000
+Cannot render console from 168.131.155.66! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#index as HTML
+  [1m[35mMovie Load (0.2ms)[0m  SELECT "movies"."rating" FROM "movies"  ORDER BY "movies"."rating" ASC
+  [1m[36mMovie Load (0.2ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('G', 'PG', 'PG-13', 'R')[0m
+  Rendered movies/index.html.haml within layouts/application (3.4ms)
+Completed 200 OK in 13ms (Views: 11.5ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/movies/search_tmdb" for 168.131.155.66 at 2019-05-30 08:27:22 +0000
+Cannot render console from 168.131.155.66! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#search_tmdb as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"1itbV6NFeuAn4NlXpFRhE6xDF+MtY8n/F0I0SreeaUDo0DVIQYw/jbht3khVHeL25HvHsIKEYh5b6NqvKFgjBw==", "search_terms"=>"Aladdin", "commit"=>"Search TMDb"}
+Redirected to https://f28d484b483f468d8f35563f1f3aa5a6.vfs.cloud9.us-east-1.amazonaws.com/movies
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/movies" for 168.131.155.66 at 2019-05-30 08:27:22 +0000
+Cannot render console from 168.131.155.66! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#index as HTML
+  [1m[35mMovie Load (0.2ms)[0m  SELECT "movies"."rating" FROM "movies"  ORDER BY "movies"."rating" ASC
+  [1m[36mMovie Load (0.2ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('G', 'PG', 'PG-13', 'R')[0m
+  Rendered movies/index.html.haml within layouts/application (3.5ms)
+Completed 200 OK in 14ms (Views: 11.8ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/movies/search_tmdb" for 168.131.155.66 at 2019-05-30 08:27:32 +0000
+Cannot render console from 168.131.155.66! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#search_tmdb as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ARc+T3bvaqNmYahwjWeSsztq68ikbs40OhWG++09oMk/7FBQlCYvzvnsr298LhFWc1I7mwuJZdV2v2gecvvqjg==", "search_terms"=>"a", "commit"=>"Search TMDb"}
+Redirected to https://f28d484b483f468d8f35563f1f3aa5a6.vfs.cloud9.us-east-1.amazonaws.com/movies
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/movies" for 168.131.155.66 at 2019-05-30 08:27:32 +0000
+Cannot render console from 168.131.155.66! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#index as HTML
+  [1m[35mMovie Load (0.2ms)[0m  SELECT "movies"."rating" FROM "movies"  ORDER BY "movies"."rating" ASC
+  [1m[36mMovie Load (0.2ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('G', 'PG', 'PG-13', 'R')[0m
+  Rendered movies/index.html.haml within layouts/application (3.5ms)
+Completed 200 OK in 14ms (Views: 11.7ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/movies/search_tmdb" for 168.131.155.66 at 2019-05-30 08:27:35 +0000
+Cannot render console from 168.131.155.66! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#search_tmdb as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"PYdQh4QyQdYnfN0HF6oXbmcYT7SUHXMGRjdzz42gUCgDfD6YZvsEu7jx2hjm45SLLyCf5zv62OcKnZ0qEmYabw==", "search_terms"=>"Aladdin", "commit"=>"Search TMDb"}
+Redirected to https://f28d484b483f468d8f35563f1f3aa5a6.vfs.cloud9.us-east-1.amazonaws.com/movies
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/movies" for 168.131.155.66 at 2019-05-30 08:27:35 +0000
+Cannot render console from 168.131.155.66! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#index as HTML
+  [1m[35mMovie Load (0.2ms)[0m  SELECT "movies"."rating" FROM "movies"  ORDER BY "movies"."rating" ASC
+  [1m[36mMovie Load (0.2ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('G', 'PG', 'PG-13', 'R')[0m
+  Rendered movies/index.html.haml within layouts/application (3.5ms)
+Completed 200 OK in 15ms (Views: 13.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/movies" for 168.131.155.66 at 2019-05-30 08:29:51 +0000
+Cannot render console from 168.131.155.66! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#index as HTML
+  [1m[35mMovie Load (0.2ms)[0m  SELECT "movies"."rating" FROM "movies"  ORDER BY "movies"."rating" ASC
+  [1m[36mMovie Load (0.2ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('G', 'PG', 'PG-13', 'R')[0m
+  Rendered movies/index.html.haml within layouts/application (3.4ms)
+Completed 200 OK in 14ms (Views: 12.1ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/movies/search_tmdb" for 168.131.155.66 at 2019-05-30 08:30:05 +0000
+Cannot render console from 168.131.155.66! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#search_tmdb as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"qQSUTLchKMTvoTAw5BCDiCBDhDeU+gOcsslC8F2ciCqX//pTVehtqXAsNy8VWQBtaHtUZDsdqH3+Y6wVwlrCbQ==", "search_terms"=>"Chocolat", "commit"=>"Search TMDb"}
+Redirected to https://f28d484b483f468d8f35563f1f3aa5a6.vfs.cloud9.us-east-1.amazonaws.com/movies
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/movies" for 168.131.155.66 at 2019-05-30 08:30:05 +0000
+Cannot render console from 168.131.155.66! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#index as HTML
+  [1m[35mMovie Load (0.2ms)[0m  SELECT "movies"."rating" FROM "movies"  ORDER BY "movies"."rating" ASC
+  [1m[36mMovie Load (0.2ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('G', 'PG', 'PG-13', 'R')[0m
+  Rendered movies/index.html.haml within layouts/application (3.7ms)
+Completed 200 OK in 14ms (Views: 12.4ms | ActiveRecord: 0.4ms)

@@ -14,12 +14,13 @@ class MoviesController < ApplicationController
     @movies= Movie.all
     @sort_by= params[:sort_by] || session[:sort_by]
     @all_ratings= Movie.order(:rating).select(:rating).map(&:rating).uniq
-   
     @ratings =params[:ratings]||session[:ratings]
+    
     if(@ratings)
       session[:ratings]=@ratings
       @movies= Movie.where(rating: @ratings.keys)  
     end
+    
     if(@sort_by)
       session[:sort_by]=@sort_by
       @movies= @movies.order(@sort_by)
@@ -51,6 +52,14 @@ class MoviesController < ApplicationController
     @movie = Movie.find(params[:id])
     @movie.destroy
     flash[:notice] = "Movie '#{@movie.title}' deleted."
+    redirect_to movies_path
+  end
+  # add to movies_controller.rb, anywhere inside
+  #  'class MoviesController < ApplicationController':
+  
+  def search_tmdb
+    # hardwire to simulate failure
+    flash[:warning] = "'#{params[:search_terms]}' was not found in TMDb."
     redirect_to movies_path
   end
 

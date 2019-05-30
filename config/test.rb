@@ -1,0 +1,1 @@
+config.web_console.development_only = false
